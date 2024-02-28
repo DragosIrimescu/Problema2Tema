@@ -5,7 +5,7 @@
 
 using namespace std;
 
-void removepunct()
+void spunctuatie()
 {
     ifstream fin("TextFile1.txt");
     char x[111];
@@ -29,7 +29,7 @@ void removepunct()
     cout << x;
 }
 
-void upperLwr()
+void convert()
 {
     ifstream fin("TextFile1.txt");
     char u[111];
@@ -59,7 +59,7 @@ void upperLwr()
 
 }
 
-void filtrareNumere()
+void scoatecifre()
 {
     ifstream fin("TextFile1.txt");
     char a[256];
@@ -91,14 +91,14 @@ int main() {
 
     switch (n) {
     case 1:
-        upperLwr();
+        convert();
         break;
 
     case 2:
-        filtrareNumere();
+        scoatecifre();
         break;
     default:
-        removepunct();
+        spunctuatie();
 
     }
 
